@@ -1,0 +1,27 @@
+[project]
+name = "gastos-cli"
+version = "1.0.0"
+description = "Gerenciador de gastos pessoais via linha de comando"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Seu Nome", email = "seu@email.com" }]
+dependencies = []
+
+[project.scripts]
+gastos = "src.main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = []
