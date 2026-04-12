@@ -10,6 +10,7 @@ from src.gastos import (
     resumo_por_categoria,
 )
 
+
 @pytest.fixture
 def gastos_exemplo():
     gastos = []

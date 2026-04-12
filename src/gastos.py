@@ -27,7 +27,7 @@ def adicionar_gasto(
     categoria: str,
     data: str | None = None,
 ) -> dict:
-    
+
     descricao = descricao.strip()
     categoria = categoria.strip()
 
