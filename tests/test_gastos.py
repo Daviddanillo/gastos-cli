@@ -1,6 +1,3 @@
-"""Testes automatizados para o módulo de gastos."""
-
-import pytest
 
 from src.gastos import (
     adicionar_gasto,
@@ -10,8 +7,7 @@ from src.gastos import (
     resumo_por_categoria,
 )
 
-
-# ── Fixtures ────────────────────────────────────────────────────────────────
+import pytest
 
 @pytest.fixture
 def gastos_exemplo():
@@ -20,9 +16,6 @@ def gastos_exemplo():
     adicionar_gasto(gastos, "Ônibus", 5.00, "Transporte", "2024-01-10")
     adicionar_gasto(gastos, "Mercado", 120.00, "Alimentação", "2024-01-11")
     return gastos
-
-
-# ── Caminho feliz ────────────────────────────────────────────────────────────
 
 def test_adicionar_gasto_valido():
     gastos = []
@@ -60,9 +53,6 @@ def test_resumo_por_categoria(gastos_exemplo):
     assert resumo["Alimentação"] == pytest.approx(155.50)
     assert resumo["Transporte"] == pytest.approx(5.00)
 
-
-# ── Entradas inválidas ───────────────────────────────────────────────────────
-
 def test_adicionar_gasto_valor_negativo():
     gastos = []
     with pytest.raises(ValueError, match="maior que zero"):
@@ -85,9 +75,6 @@ def test_adicionar_gasto_categoria_vazia():
     gastos = []
     with pytest.raises(ValueError, match="categoria"):
         adicionar_gasto(gastos, "Teste", 10.0, "   ")
-
-
-# ── Casos limite ─────────────────────────────────────────────────────────────
 
 def test_remover_gasto_inexistente(gastos_exemplo):
     removido = remover_gasto(gastos_exemplo, 999)

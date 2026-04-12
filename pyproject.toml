@@ -5,7 +5,7 @@ description = "Gerenciador de gastos pessoais via linha de comando"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
-authors = [{ name = "Seu Nome", email = "seu@email.com" }]
+authors = [{ name = "David Danillo", email = "daviddanillo@sempreceub.com" }]
 dependencies = []
 
 [project.scripts]

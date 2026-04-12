@@ -46,9 +46,9 @@ def fluxo_adicionar(gastos: list[dict]) -> None:
     try:
         valor = float(valor_str)
         gasto = adicionar_gasto(gastos, descricao, valor, categoria)
-        print(f"\n  ✅ Gasto adicionado! ID #{gasto['id']} — R$ {gasto['valor']:.2f}")
+        print(f"\n  Gasto adicionado! ID #{gasto['id']} — R$ {gasto['valor']:.2f}")
     except ValueError as e:
-        print(f"\n  ❌ Erro: {e}")
+        print(f"\n  Erro: {e}")
 
 
 def fluxo_listar(gastos: list[dict]) -> None:
@@ -62,11 +62,11 @@ def fluxo_remover(gastos: list[dict]) -> None:
     try:
         gasto_id = int(input("  ID do gasto a remover: "))
         if remover_gasto(gastos, gasto_id):
-            print(f"  ✅ Gasto #{gasto_id} removido.")
+            print(f"  Gasto #{gasto_id} removido.")
         else:
-            print(f"  ❌ Gasto #{gasto_id} não encontrado.")
+            print(f"  Gasto #{gasto_id} não encontrado.")
     except ValueError:
-        print("  ❌ ID inválido.")
+        print("  ID inválido.")
 
 
 def fluxo_resumo(gastos: list[dict]) -> None:
@@ -98,12 +98,12 @@ def main() -> None:
             fluxo_resumo(gastos)
         elif opcao == "5":
             total = calcular_total(gastos)
-            print(f"\n  💳 Total gasto: R$ {total:.2f}")
+            print(f"\n Total gasto: R$ {total:.2f}")
         elif opcao == "0":
-            print("\n  Até logo! 👋\n")
+            print("\n  Até logo! \n")
             break
         else:
-            print("\n  ❌ Opção inválida.")
+            print("\n Opção inválida.")
 
 
 if __name__ == "__main__":

@@ -9,7 +9,7 @@
 
 ## Descrição do Problema
 
-O descontrole financeiro pessoal vem sendo uma das principais causas de endividamento no Brasil. Segundo o Banco Central, mais de 70%(aproximadamento 77% atualemnte) dos brasileiros não acompanham seus gastos de forma regular. A ausência de um controle simples e acessível faz com que muitas pessoas percam a noção de para onde vai o dinheiro, levando a dívidas e dificuldades em economizar dinheiro.
+O descontrole financeiro pessoal vem sendo uma das principais causas de endividamento no Brasil. Segundo o Banco Central, mais de 70%(aproximadamente 77%) dos brasileiros não acompanham seus gastos de forma regular. A ausência de um controle simples e acessível faz com que muitas pessoas percam a noção de onde vai o dinheiro gasto, levando-a dívidas e dificuldades em economizar dinheiro.
 
 ## Proposta da Solução
 
@@ -115,7 +115,7 @@ Você verá o menu interativo:
   Descrição: Almoço no trabalho
   Categoria: Alimentação
   Valor (R$): 32,50
-  ✅ Gasto adicionado! ID #1 — R$ 32.50
+  Gasto adicionado! ID #1 — R$ 32.50
 ```
 
 ---
@@ -160,6 +160,5 @@ Veja o status do build no badge no topo deste README.
 
 ---
 
-## 👤 Autor
+## Autor
 David Danillo Gomes Braga  
-Repositório: [https://github.com/SEU_USUARIO/gastos-cli](https://github.com/SEU_USUARIO/gastos-cli)
