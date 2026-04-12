@@ -1,3 +1,6 @@
+"""Testes automatizados para o módulo de gastos."""
+
+import pytest
 
 from src.gastos import (
     adicionar_gasto,
@@ -6,8 +9,6 @@ from src.gastos import (
     remover_gasto,
     resumo_por_categoria,
 )
-
-import pytest
 
 @pytest.fixture
 def gastos_exemplo():

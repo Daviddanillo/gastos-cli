@@ -1,4 +1,3 @@
-"""Módulo principal de gerenciamento de gastos pessoais."""
 
 import json
 import os
@@ -8,7 +7,7 @@ ARQUIVO_DADOS = "dados.json"
 
 
 def carregar_dados(caminho: str = ARQUIVO_DADOS) -> list[dict]:
-    """Carrega os gastos salvos do arquivo JSON."""
+
     if not os.path.exists(caminho):
         return []
     with open(caminho, "r", encoding="utf-8") as f:
@@ -28,11 +27,7 @@ def adicionar_gasto(
     categoria: str,
     data: str | None = None,
 ) -> dict:
-    """Adiciona um novo gasto à lista.
-
-    Raises:
-        ValueError: Se descrição vazia, valor negativo ou zero, ou categoria vazia.
-    """
+    
     descricao = descricao.strip()
     categoria = categoria.strip()
 
@@ -55,14 +50,12 @@ def adicionar_gasto(
 
 
 def listar_gastos(gastos: list[dict], categoria: str | None = None) -> list[dict]:
-    """Retorna a lista de gastos, opcionalmente filtrada por categoria."""
     if categoria:
         return [g for g in gastos if g["categoria"].lower() == categoria.lower()]
     return gastos
 
 
 def remover_gasto(gastos: list[dict], gasto_id: int) -> bool:
-    """Remove um gasto pelo ID. Retorna True se removido, False se não encontrado."""
     for i, g in enumerate(gastos):
         if g["id"] == gasto_id:
             gastos.pop(i)
@@ -71,12 +64,10 @@ def remover_gasto(gastos: list[dict], gasto_id: int) -> bool:
 
 
 def calcular_total(gastos: list[dict]) -> float:
-    """Calcula o total de gastos."""
     return round(sum(g["valor"] for g in gastos), 2)
 
 
 def resumo_por_categoria(gastos: list[dict]) -> dict[str, float]:
-    """Retorna um dicionário com o total gasto por categoria."""
     resumo: dict[str, float] = {}
     for g in gastos:
         cat = g["categoria"]
