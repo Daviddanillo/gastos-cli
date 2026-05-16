@@ -6,6 +6,11 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/)
 e este projeto adota [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
 ---
+## v2.0.0
+- Integração com NewsAPI para resumo econômico do dia
+- Nova opção 6 no menu: "Resumo econômico do dia"
+- Novo módulo src/noticias.py
+- Testes de integração com mock em tests/test_noticias.py
 
 ## [1.0.0] - 2025-04-11
 

@@ -29,6 +29,7 @@ Qualquer pessoa que deseje ter um controle básico de suas finanças pessoais se
 - Ver resumo de gastos agrupados por categoria
 - Calcular o total gasto
 - Persistência automática em arquivo JSON
+- Resumo econômico do dia (Integração com NewsAPI)
 
 ---
 
@@ -157,6 +158,7 @@ Veja o status do build no badge no topo deste README.
 ## Versão
 
 **1.0.0** — veja [CHANGELOG.md](CHANGELOG.md) para o histórico de mudanças.
+**2.0.0** — integração com NewsAPI para resumo econômico do dia.
 
 ---
 
