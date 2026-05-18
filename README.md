@@ -162,5 +162,8 @@ Veja o status do build no badge no topo deste README.
 
 ---
 
+## Deploy : https://replit.com/@daviddanillo07/gastos-cli
+
+---
 ## Autor
 David Danillo Gomes Braga  
